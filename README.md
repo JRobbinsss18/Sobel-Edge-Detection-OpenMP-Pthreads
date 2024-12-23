@@ -1,19 +1,32 @@
+# Sobel Edge Detection with OpenMP and Pthreads
 
+This project demonstrates the performance enhancement achieved by parallelizing a Sobel edge detection algorithm using OpenMP and Pthreads. The original code, which processed a single image, has been adapted to apply Sobel edge detection to each frame of a video, producing an audio-less video with the edge detection applied.
 
-# Sobel Edge Detection with OpenMP AND Pthreads
+## Table of Contents
 
-This project was designed to show the speedup potential of a pre-existing code that applied sobel edge detection to a single image. 
-I adapted the original code to work for videos, applying sobel edge detection to every single frame, and returning an audio-less video with edge detection appl.ed
+- [Project Overview](#project-overview)
+- [Files in the Repository](#files-in-the-repository)
+- [Installation and Usage](#installation-and-usage)
 
+## Project Overview
 
-# Installation
+The objective of this project is to showcase the potential speedup gained by parallelizing the Sobel edge detection algorithm using OpenMP and Pthreads. By extending the original single-image processing code to handle videos, the project applies Sobel edge detection to each frame, resulting in an output video that highlights the detected edges.
 
-To do
+## Files in the Repository
 
-# Usage
+- `sobel_edge_detection.c`: Original implementation of the Sobel edge detection algorithm for single images.
+- `sobel_edge_detectionParallel.c`: Parallelized implementation using OpenMP and Pthreads for processing videos.
+- `runSeq.sh`: Shell script to execute the sequential version of the Sobel edge detection.
+- `runPar.sh`: Shell script to execute the parallel version of the Sobel edge detection.
+- `Makefile`: Build configuration file for compiling the code.
+- `TestVideos/`: Directory containing sample videos used for testing.
+- `ResultsSeq/`: Directory to store results from the sequential execution.
+- `ResultsPar/`: Directory to store results from the parallel execution.
 
-To do
+## Installation and Usage
 
-# Notes
+1. **Clone the repository**:
 
-This repo comes with the original videos used in my video report, Video report is available upon request.
+   ```bash
+   git clone https://github.com/JRobbinsss18/Sobel-Edge-Detection-OpenMP-Pthreads.git
+   cd Sobel-Edge-Detection-OpenMP-Pthreads
